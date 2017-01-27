@@ -1,0 +1,30 @@
+img {
+  float: right;
+  width: 30%;
+}
+
+.jumbotron {
+  background-image: url('../img/panuccipizza.png');
+  background-position: center;
+  background-size: cover;
+}
+
+body{
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hide-me {
+  /*display: none;*/
+  color: white ;
+}
+
+.hide-me h3 {
+  text-align: center;
+  font-family: Impact sans-serif;
+  font-size: 75px;
+}
+
+.hide-me {
+  font-size: 30px;
+}

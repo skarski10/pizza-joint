@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css" media="screen">
+    <link rel="stylesheet" href="css/order.css" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/scripts.js">
     </script>
@@ -13,17 +13,18 @@
     <div class="container">
       <div class="row jumbotron">
         <h1>Panucci's Pizza</h1>
+        <img src="" alt="">
       </div>
       <div class="row" id="buttonRow">
       <a href="index.html"><button type="button" class="btn btn-primary">Home</button></a>
 
-      <a href="order.html"><button type="button" class="btn btn-info">Order</button></a>
+      <a href="order.html"><button type="button" class="btn btn-primary">Order</button></a>
 
-      <a href=""><button type="button" class="btn btn-warning">Delivery</button></a>
+      <a href=""><button type="button" class="btn btn-primary">Delivery</button></a>
 
-      <a href=""><button type="button" class="btn btn-success">Employees</button></a>
+      <a href=""><button type="button" class="btn btn-primary">Employees</button></a>
 
-      <a href=""><button type="button" class="btn btn-danger">Contact</button></a>
+      <a href=""><button type="button" class="btn btn-primary">Contact</button></a>
     </div>
     <div class="row">
       <div class="row" id="pizza-size">
@@ -46,8 +47,8 @@
       <div class="row">
         <h3>Toppings</h3>
         <form class="" id="toppings">
-          <div class="form-group">
-            <p>Select Standard Toppings</p>
+          <div class="form-group col-md-4">
+            <p>Select Veggies</p>
             <p>Each topping is $0.50</p>
             <input type="checkbox" name="veggies" value="black olives">Black olives<br>
             <input type="checkbox" name="veggies" value="tomatoes">Tomatoes<br>
@@ -56,10 +57,19 @@
             <input type="checkbox" name="veggies" value="green peppers">Green peppers<br>
             <input type="checkbox" name="veggies" value="jalapeños">Jalapeños<br>
           </div>
+          <div class="form-group col-md-4">
+            <p>Select Meats</p>
+            <p>Each topping is $1.00</p>
+            <input type="checkbox" name="meats" value="pepperoni">Pepperoni<br>
+            <input type="checkbox" name="meats" value="italian sausage">Italian sausage<br>
+            <input type="checkbox" name="meats" value="canadian bacon">Canadian bacon<br>
+            <input type="checkbox" name="meats" value="bacon">Bacon<br>
+          </div>
           <button class="btn" type="submit" name="order" id="order">Submit Order</button>
         </form>
       </div>
       <div class="hide-me">
+        <h3>Total</h3>
         <p>Your order total is $<span id="pizza-cost"></span>.</p>
       </div>
     </div>
