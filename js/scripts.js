@@ -1,5 +1,5 @@
 // business logic
-function order(size, toppings) {
+function order (size, toppings) {
   this.sizeOrdered = size;
   this. toppingsOrdered = toppings;
 }
