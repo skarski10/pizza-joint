@@ -26,9 +26,9 @@ This program will take and store toppings from the user
 * **Input:** Pepperoni, Green Peppers, Mushrooms
 * **Output:** ['Pepperoni', 'Green Peppers', 'Mushrooms']
 
-This program will use the constructors and prototypes to calculate a price of the users inputs.
-* **Input:** Pepperoni, Green Peppers, Mushrooms / Large
-* **Output:** $19.50
+This program will use the constructors and prototypes to calculate a price for size.
+* **Input:** Large
+* **Output:** $17.00
 
 This program will tell the user how much their pizza costs based on the toppings and size they selected
 * **Input:** Pepperoni, Green Peppers, Mushrooms / Large
