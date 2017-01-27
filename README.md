@@ -6,13 +6,13 @@
 This webpage will let you order a pizza. You can select a different size pizza and toppings. The web site will then tell you how much your order is.
 
 ##Specifications
-The program will use a constructor to store information
-* **Input:** Pepperoni, Green Peppers, Mushrooms
-* **Output:** ['Pepperoni', 'Green Peppers', 'Mushrooms']
-
 This program will store the size of the pizza ordered
 * **Input:** Large
 * **Output:** 'Large'
+
+The program will use a constructor to store information
+* **Input:** Pepperoni, Green Peppers, Mushrooms
+* **Output:** ['Pepperoni', 'Green Peppers', 'Mushrooms']
 
 This program will will use a prototype to find the price of an order.
 * **Input:** Pepperoni, Green Peppers, Mushrooms / Large
