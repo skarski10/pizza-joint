@@ -1,13 +1,14 @@
 // business logic
 var order;
 var defaultPrice;
-function Order (size, toppings) {
+function Order (size, veggies, meats) {
   this.sizeOrdered = size;
-  this.toppingsOrdered = toppings;
+  this.veggiesOrdered = veggies;
+  this.meatsOrdered = meats;
 }
 
 function veggies () {
-  defaultPrice = defaultPrice + 0.5;
+  defaultPrice = defaultPrice + 0.50;
   return defaultPrice;
 }
 
@@ -17,8 +18,8 @@ function meats () {
 }
 Order.prototype.totalPrice = function() {
   defaultPrice = 14;
-  order.toppingsOrdered.forEach(veggies)
-  order.toppingsOrdered.forEach(meats)
+  order.veggiesOrdered.forEach(veggies)
+  order.meatsOrdered.forEach(meats)
 
   if (order.sizeOrdered === 'small') {
     return defaultPrice -2;
@@ -32,16 +33,21 @@ Order.prototype.totalPrice = function() {
 $(document).ready(function() {
   $('form#toppings').submit(function(event) {
     event.preventDefault();
-    var toppingsChecked = [];
+    var veggiesChecked = [];
+    var meatsChecked = [];
     $("input:checkbox[name=veggies]:checked").each(function(){
-      toppingsChecked.push($(this).val());
+      veggiesChecked.push($(this).val());
+    });
+    $("input:checkbox[name=meats]:checked").each(function(){
+      meatsChecked.push($(this).val());
     });
     var pizzaSize = $("input:radio[name=size]:checked").val();
     order;
-    order = new Order(pizzaSize, toppingsChecked);
-    $('#hide-me').hide();
-    $('#hide-me').show();
+    order = new Order(pizzaSize, veggiesChecked, meatsChecked);
+    $('.orders').hide();
+    $('.hide-me').show();
     $('#pizza-cost').text(order.totalPrice);
+    $('#pizza-ordered').text('1 ' + order.sizeOrdered + ' pizza with ' + order.veggiesOrdered + ' & ' + order.meatsOrdered);
 
   });
 });

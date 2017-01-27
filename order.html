@@ -12,67 +12,80 @@
   <body>
     <div class="container">
       <div class="row jumbotron">
-        <h1>Panucci's Pizza</h1>
-        <img src="" alt="">
+        <h1>PANUCCI'S PIZZA</h1>
+        <p><em>"Do not tip delivery boy"</em></p>
       </div>
       <div class="row" id="buttonRow">
-      <a href="index.html"><button type="button" class="btn btn-primary">Home</button></a>
+        <a href="index.html"><button type="button" class="btn btn-primary">Home</button></a>
 
-      <a href="order.html"><button type="button" class="btn btn-primary">Order</button></a>
+        <a href="order.html"><button type="button" class="btn btn-primary">Order</button></a>
 
-      <a href=""><button type="button" class="btn btn-primary">Delivery</button></a>
+        <a href=""><button type="button" class="btn btn-primary">Delivery</button></a>
 
-      <a href=""><button type="button" class="btn btn-primary">Employees</button></a>
+        <a href="employees.html"><button type="button" class="btn btn-primary">Employees</button></a>
 
-      <a href=""><button type="button" class="btn btn-primary">Contact</button></a>
-    </div>
-    <div class="row">
-      <div class="row" id="pizza-size">
-        <h3>Pizza Size</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="size" value="small" checked>
-            Small
-          </label>
-          <label>
-            <input type="radio" name="size" value="medium" checked>
-            Medium
-          </label>
-          <label>
-            <input type="radio" name="size" value="large" checked>
-            Large
-          </label>
-        </div>
+        <a href=""><button type="button" class="btn btn-primary">Contact</button></a>
       </div>
-      <div class="row">
-        <h3>Toppings</h3>
-        <form class="" id="toppings">
-          <div class="form-group col-md-4">
-            <p>Select Veggies</p>
-            <p>Each topping is $0.50</p>
-            <input type="checkbox" name="veggies" value="black olives">Black olives<br>
-            <input type="checkbox" name="veggies" value="tomatoes">Tomatoes<br>
-            <input type="checkbox" name="veggies" value="mushrooms">Mushrooms<br>
-            <input type="checkbox" name="veggies" value="onions">Onions<br>
-            <input type="checkbox" name="veggies" value="green peppers">Green peppers<br>
-            <input type="checkbox" name="veggies" value="jalapeños">Jalapeños<br>
+      <div class="row orders">
+        <div class="row order" id="pizza-size">
+          <h3>Pizza Size</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="small" checked>
+              Small
+            </label>
+            <label>
+              <input type="radio" name="size" value="medium" checked>
+              Medium
+            </label>
+            <label>
+              <input type="radio" name="size" value="large" checked>
+              Large
+            </label>
           </div>
-          <div class="form-group col-md-4">
-            <p>Select Meats</p>
-            <p>Each topping is $1.00</p>
-            <input type="checkbox" name="meats" value="pepperoni">Pepperoni<br>
-            <input type="checkbox" name="meats" value="italian sausage">Italian sausage<br>
-            <input type="checkbox" name="meats" value="canadian bacon">Canadian bacon<br>
-            <input type="checkbox" name="meats" value="bacon">Bacon<br>
-          </div>
-          <button class="btn" type="submit" name="order" id="order">Submit Order</button>
-        </form>
+        </div>
+        <div class="row">
+          <h3>Toppings</h3>
+          <form class="" id="toppings">
+            <div class="form-group col-md-4">
+              <p>Select Veggies</p>
+              <p>Each topping is $0.50</p>
+              <input type="checkbox" name="veggies" value="black olives">Black olives<br>
+              <input type="checkbox" name="veggies" value="tomatoes">Tomatoes<br>
+              <input type="checkbox" name="veggies" value="mushrooms">Mushrooms<br>
+              <input type="checkbox" name="veggies" value="onions">Onions<br>
+              <input type="checkbox" name="veggies" value="green peppers">Green peppers<br>
+              <input type="checkbox" name="veggies" value="jalapeños">Jalapeños<br>
+            </div>
+            <div class="col-md-4">
+
+              <div class="form-group">
+                <p>Select Meats</p>
+                <p>Each topping is $1.00</p>
+                <input type="checkbox" name="meats" value="pepperoni">Pepperoni<br>
+                <input type="checkbox" name="meats" value="italian sausage">Italian sausage<br>
+                <input type="checkbox" name="meats" value="canadian bacon">Canadian bacon<br>
+                <input type="checkbox" name="meats" value="bacon">Bacon<br>
+              </div>
+            </div>
+            <div class="row">
+              <button class="btn" type="submit" name="order" id="order">Submit Order</button>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="hide-me">
         <h3>Total</h3>
-        <p>Your order total is $<span id="pizza-cost"></span>.</p>
+        <p>Your total for <span id="pizza-ordered"></span> is $<span id="pizza-cost"></span></p>
       </div>
-    </div>
+      <div class="row" id="address">
+        <address>
+          <strong>Panucci's Pizza</strong><br>
+          1500 Main Street<br>
+          Manhattan, NY 10010<br>
+          <abbr title="Phone">P:</abbr> (212) 345-4561
+        </address>
+      </div>
     </div>
   </body>
 </html>

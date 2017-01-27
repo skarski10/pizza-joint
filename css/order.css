@@ -7,6 +7,9 @@ img {
   background-image: url('../img/panuccipizza.png');
   background-position: center;
   background-size: cover;
+  color: darkred;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  text-shadow: 2px 2px black;
 }
 
 body{
@@ -15,7 +18,7 @@ body{
   background-size: cover;
 }
 .hide-me {
-  /*display: none;*/
+  display: none;
   color: white ;
 }
 
@@ -27,4 +30,16 @@ body{
 
 .hide-me {
   font-size: 30px;
+}
+
+#address {
+  text-align: center;
+  color: white;
+}
+#order .btn button {
+  color: white;
+}
+
+.orders {
+  color: #D49B17;
 }

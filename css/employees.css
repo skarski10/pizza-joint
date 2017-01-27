@@ -11,6 +11,7 @@ body{
   color: darkred;
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
   text-shadow: 2px 2px black;
+  text-align: right;
 }
 
 #address {
@@ -18,4 +19,15 @@ body{
   color: white;
 }
 
-img
+img {
+  width: 50%;
+}
+
+.col-md-6 {
+  color: white;
+}
+
+#employees {
+  text-align: center;
+  color: white;
+}
