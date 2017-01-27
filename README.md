@@ -1,7 +1,7 @@
-#
+#Panucci's Pizza
 **Fourth week Friday review for Epicodus, 01.27.17**
 ###By Kory Skarbek
-###[Order from Panucci's Pizza](skarski10.github.io/)
+###[Order from Panucci's Pizza](skarski10.github.io/pizza-joint)
 ##Description
 This webpage will let you order a pizza. You can select a different size pizza and toppings. The web site will then tell you how much your order is.
 
