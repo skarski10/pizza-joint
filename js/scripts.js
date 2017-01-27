@@ -1,25 +1,20 @@
 // business logic
-var orderPrice;
+var order;
+var defaultPrice = 14;
 function Order (size, toppings) {
   this.sizeOrdered = size;
   this.toppingsOrdered = toppings;
-  console.log(this.sizeOrdered);
-  console.log(this.toppingsOrdered);
 }
-var defaultPrice = 14;
 
-function toppings() {
+function veggies () {
   defaultPrice = defaultPrice + 0.5;
   return defaultPrice;
 }
-console.log(defaultPrice);
 Order.prototype.totalPrice = function() {
-  console.log(this.sizeOrdered);
-  console.log(toppingsOrdered);
-  toppingsOrdered.forEach(toppings);
-  if (size === 'small') {
+  order.toppingsOrdered.forEach(veggies)
+  if (order.sizeOrdered === 'small') {
     return defaultPrice -2;
-  } else if (size === 'large') {
+  } else if (order.sizeOrdered === 'large') {
     return defaultPrice +3
   }
   return defaultPrice;
@@ -34,8 +29,7 @@ $(document).ready(function() {
       toppingsChecked.push($(this).val());
     });
     var pizzaSize = $("input:radio[name=size]:checked").val();
-  var order = new Order(pizzaSize, toppingsChecked);
-
-  // $('#pizza-cost').text(order.totalPrice);
+    order = new Order(pizzaSize, toppingsChecked);
+  $('#pizza-cost').text(order.totalPrice);
   });
 });
