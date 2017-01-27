@@ -1,6 +1,6 @@
 // business logic
 var order;
-var defaultPrice = 14;
+var defaultPrice;
 function Order (size, toppings) {
   this.sizeOrdered = size;
   this.toppingsOrdered = toppings;
@@ -11,6 +11,7 @@ function veggies () {
   return defaultPrice;
 }
 Order.prototype.totalPrice = function() {
+  defaultPrice = 14;
   order.toppingsOrdered.forEach(veggies)
   if (order.sizeOrdered === 'small') {
     return defaultPrice -2;
@@ -29,6 +30,7 @@ $(document).ready(function() {
       toppingsChecked.push($(this).val());
     });
     var pizzaSize = $("input:radio[name=size]:checked").val();
+    order;
     order = new Order(pizzaSize, toppingsChecked);
   $('#pizza-cost').text(order.totalPrice);
   });
