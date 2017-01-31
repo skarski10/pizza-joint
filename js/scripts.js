@@ -60,7 +60,7 @@ $(document).ready(function() {
     $('#ordering').hide();
     $('.hide-me').show();
     $('#pizza-cost').text(order.totalPrice);
-    $('#pizza-ordered').text(order.sizeOrdered + ' pizza with ' + order.veggiesOrdered + ' & ' + order.meatsOrdered);
+    $('#pizza-ordered').text(order.sizeOrdered + ' pizza with ' + order.veggiesOrdered + order.meatsOrdered  + order.specialtyOrdered);
 
   });
 });
