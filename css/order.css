@@ -4,12 +4,20 @@ img {
 }
 
 .jumbotron {
-  background-image: url('../img/panuccipizza.png');
+  background-image: url('../img/background2.jpg');
   background-position: center;
   background-size: cover;
-  color: darkred;
-  font-family: Futura, Trebuchet MS, Arial, sans-serif;
-  text-shadow: 2px 2px black;
+  color: ;
+  font-family: Tradizional DEMO, Futura, Trebuchet MS, Arial, sans-serif;
+  /*text-shadow: 2px 2px black;*/
+}
+
+.jumbotron h1 {
+  font-size: 75px;
+}
+
+.jumbotron img {
+  float: left;
 }
 
 body{
@@ -42,4 +50,16 @@ body{
 
 .orders {
   color: #D49B17;
+}
+
+.orders div h1 {
+  color: white;
+}
+
+.order-header {
+  color: white;
+  text-align: center;
+}
+#pizza-size {
+  border: 2px 2px 0px 2px solid black;
 }

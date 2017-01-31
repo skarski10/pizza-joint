@@ -5,12 +5,12 @@ body{
 }
 
 .jumbotron {
-  background-image: url('../img/panuccipizza.png');
+  background-image: url('../img/background2.jpg');
   background-position: center;
   background-size: cover;
-  color: darkred;
-  font-family: Futura, Trebuchet MS, Arial, sans-serif;
-  text-shadow: 2px 2px black;
+  color: ;
+  font-family: Tradizional DEMO, Futura, Trebuchet MS, Arial, sans-serif;
+  /*text-shadow: 2px 2px black;*/
 }
 
 #address {
@@ -18,4 +18,10 @@ body{
   color: white;
 }
 
-img
+img {
+  width: 75%;
+}
+
+.jumbotron h1 {
+  font-size: 75px;
+}

@@ -13,7 +13,8 @@
     <div class="container">
       <div class="row jumbotron">
         <h1>PANUCCI'S PIZZA</h1>
-        <p><em>"Do not tip delivery boy"</em></p>
+        <!-- <p><em>"Do not tip delivery boy"</em></p> -->
+        <img src="img/panuccipizza.png" alt="">
       </div>
       <div class="row" id="buttonRow">
         <a href="index.html"><button type="button" class="btn btn-primary">Home</button></a>
@@ -26,9 +27,9 @@
 
         <a href=""><button type="button" class="btn btn-primary">Contact</button></a>
       </div>
-      <div class="row orders">
-        <div class="row order" id="pizza-size">
-          <h3>Pizza Size</h3>
+      <div class="row" id="ordering">
+        <div class="row" id="pizza-size">
+          <h3 class="order-header">Pizza Size</h3>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="small" checked>
@@ -44,28 +45,38 @@
             </label>
           </div>
         </div>
-        <div class="row">
-          <h3>Toppings</h3>
+        <div class="row border">
+          <h3 class="order-header">Toppings</h3>
           <form class="" id="toppings">
-            <div class="form-group col-md-4">
-              <p>Select Veggies</p>
+            <div class="form-group col-md-4 orders">
+              <h4>Select Veggies</h4>
               <p>Each topping is $0.50</p>
-              <input type="checkbox" name="veggies" value="black olives">Black olives<br>
+              <input type="checkbox" name="veggies" value="black olives">Black Olives<br>
               <input type="checkbox" name="veggies" value="tomatoes">Tomatoes<br>
               <input type="checkbox" name="veggies" value="mushrooms">Mushrooms<br>
               <input type="checkbox" name="veggies" value="onions">Onions<br>
-              <input type="checkbox" name="veggies" value="green peppers">Green peppers<br>
+              <input type="checkbox" name="veggies" value="green peppers">Green Peppers<br>
               <input type="checkbox" name="veggies" value="jalapeños">Jalapeños<br>
             </div>
             <div class="col-md-4">
-
-              <div class="form-group">
-                <p>Select Meats</p>
+              <div class="form-group orders">
+                <h4>Select Meats</h4>
                 <p>Each topping is $1.00</p>
                 <input type="checkbox" name="meats" value="pepperoni">Pepperoni<br>
-                <input type="checkbox" name="meats" value="italian sausage">Italian sausage<br>
-                <input type="checkbox" name="meats" value="canadian bacon">Canadian bacon<br>
+                <input type="checkbox" name="meats" value="italian sausage">Italian Sausage<br>
+                <input type="checkbox" name="meats" value="canadian bacon">Canadian Bacon<br>
                 <input type="checkbox" name="meats" value="bacon">Bacon<br>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group orders">
+                <h4 class="order-header">Specialty Toppings</h4>
+                <p>Each topping is $1.50</p>
+                <input type="checkbox" name="specialty" value="bbq chicken">BBQ Chicken<br>
+                <input type="checkbox" name="specialty" value="anchovies">Anchovies<br>
+                <input type="checkbox" name="specialty" value="canadian bacon">Canadian Bacon<br>
+                <input type="checkbox" name="specialty" value="pineapple">Pineapple<br>
+                <input type="checkbox" name="specialty" value="sundried tomatoes">Sundried <title>Home</title>omatoes<br>
               </div>
             </div>
             <div class="row">
@@ -76,7 +87,7 @@
       </div>
       <div class="hide-me">
         <h3>Total</h3>
-        <p>Your total for <span id="pizza-ordered"></span> is $<span id="pizza-cost"></span></p>
+        <p>Your total for 1 <span id="pizza-ordered"></span> is $<span id="pizza-cost"></span></p>
       </div>
       <div class="row" id="address">
         <address>
