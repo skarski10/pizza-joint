@@ -18,6 +18,7 @@ img {
 
 .jumbotron img {
   float: left;
+  width: 30%;
 }
 
 body{

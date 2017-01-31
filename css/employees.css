@@ -17,6 +17,11 @@ body{
   font-size: 75px;
 }
 
+.jumbotron img {
+  float: left;
+  width: 30%;
+}
+
 #address {
   text-align: center;
   color: white;
